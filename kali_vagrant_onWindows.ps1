@@ -1,3 +1,5 @@
+# iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/omair2084/misc/refs/heads/master/kali_vagrant_onWindows.ps1'))
+
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     Write-Host "Please run this script as Administrator!" -ForegroundColor Red
     exit
