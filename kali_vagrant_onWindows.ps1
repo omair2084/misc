@@ -2,7 +2,7 @@
 
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     Write-Host "Please run this script as Administrator!" -ForegroundColor Red
-    exit
+    throw
 }
 
 Write-Host "Starting software installations..." -ForegroundColor Green
